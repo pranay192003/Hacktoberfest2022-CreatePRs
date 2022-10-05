@@ -1,0 +1,48 @@
+package fisrt;
+import java.util.*;
+class Rectangle{
+	Scanner sc = new Scanner(System.in);
+
+	double length;
+	double width;
+    double area;
+ String colour;
+	public void getLength() {
+		System.out.println("Enter the length");
+		double length = sc.nextDouble();
+		System.out.println(length);
+ }
+	public void getWidth() {
+		System.out.println("Enter the Width");
+		double width = sc.nextDouble();
+		System.out.println(width);
+	}
+	public void getArea() {
+		System.out.println("Area is");
+		 double area = length*width;
+		System.out.println(area);
+	}
+	public void getColour() {
+		System.out.println("Enter the Colour");
+		String colour = sc.nextLine();
+		sc.nextLine();
+		System.out.println(colour);
+	}
+	
+}
+public class Assignment {
+
+	public static void main(String[] args) {
+		
+	Rectangle obj1 = new Rectangle();
+
+	  obj1.getLength();
+	  obj1.getWidth();
+	  obj1.getArea();
+	  obj1.getColour();
+	 
+	
+	
+	}
+
+}
