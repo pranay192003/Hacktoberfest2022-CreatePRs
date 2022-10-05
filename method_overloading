@@ -1,0 +1,9 @@
+public class MethodDemo {
+	static int Add(int i, int y){
+	return i + 5 +y;
+ }
+	public static void main(String[] args) {
+		int z = Add(4,5);
+		System.out.println(z); 
+	}
+}
