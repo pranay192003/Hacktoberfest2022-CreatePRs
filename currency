@@ -1,0 +1,28 @@
+package fisrt;
+import java.util.*;
+import java.text.*;
+import java.text.DecimalFormat;
+public class Currency_Formatter {
+
+	public static void main(String[] args) {
+		
+		 Scanner scanner = new Scanner(System.in);
+	        double payment = scanner.nextDouble();
+	        scanner.close();
+	        
+	        // Write your code here.
+	        DecimalFormat ft = new DecimalFormat("$##,###.##");
+	        System.out.println("US: " + ft.format(payment));
+	        DecimalFormat ft1 = new DecimalFormat("##,###.##");
+	        System.out.println("India: " + "Rs." + ft1.format(payment));
+	        DecimalFormat ft2 = new DecimalFormat("\u00A5##,###.##");
+	        System.out.println("China: " + ft2.format(payment));
+	        DecimalFormat ft3 = new DecimalFormat("# #,###.##");
+	        System.out.println("France: " + ft3.format(payment) + "\u20AC");
+		    }
+		}
+
+
+	
+
+
