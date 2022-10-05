@@ -1,0 +1,44 @@
+package fisrt;
+
+public class abdemo {
+
+	public static void main(String[] args) {
+		MaheshPhone Obj4 = new SureshPhone();//cannot instantiate the abstract class
+		Obj4.call();
+		Obj4.move();
+		Obj4.dance();
+		Obj4.cook();
+	}
+
+}
+
+abstract class MaheshPhone
+{
+	public void call()
+	{
+		System.out.println("calling...");
+	}
+	public abstract void move();//abstract methods
+	public abstract void dance();
+	public abstract void cook();
+}
+
+abstract class RameshPhone extends MaheshPhone
+{
+	public void move()
+	{
+		System.out.println("moving...");
+	}
+}
+
+class SureshPhone extends RameshPhone
+{
+	public void dance()
+	{
+	System.out.println("dancing...");
+	}
+	public void cook()
+	{
+		System.out.println("cooking...");
+	}
+}
