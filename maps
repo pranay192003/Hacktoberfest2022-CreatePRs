@@ -1,0 +1,18 @@
+import java.util.*;
+public class java_maps {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		for (int i=4; i>0;i--) {
+			String s = sc.nextLine();
+			int phone = sc.nextInt();
+		sc.nextLine();
+		}
+          String s;
+          int phone;
+			System.out.println(s);
+		
+          
+		}
+	}
+
