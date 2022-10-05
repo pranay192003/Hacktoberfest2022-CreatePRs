@@ -1,0 +1,36 @@
+
+
+abstract class bank
+{
+	public abstract void getbalance();
+	
+}
+class bankA extends bank{
+	public void getbalance()
+	{
+		System.out.println("100");
+	}
+}
+class bankB extends bank{
+	public void getbalance()
+	{
+		System.out.println("200");
+	}
+}
+class bankC extends bank{
+	public void getbalance()
+	{
+		System.out.println("300");
+	}
+}
+
+
+
+public class AbstractExample {
+
+	public static void main(String[] args) {
+		bankB obj = new bankA();
+		obj.getbalance();
+	}
+
+}
