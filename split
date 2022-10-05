@@ -1,0 +1,17 @@
+import java.util.Arrays;
+public class String_split {
+	public static void main(String[] args) {
+		
+
+ {
+		    String testStr = "one,   two, three";
+
+		    System.out.println("Original string: " + testStr);
+		    String[] result = testStr.split(",\\s*");
+		    System.out.print("Split at commas: ");
+		    System.out.println(Arrays.toString(result));
+
+		  }
+		}
+	}
+
